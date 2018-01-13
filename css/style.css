@@ -8,6 +8,15 @@ Secondary colour (sea foam): #86e8af
 Secondary colour (coral): #e35f56
 */
 
+/*General*/
+.wrapper {
+  min-width: 360px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Fonts*/
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -27,12 +36,13 @@ h3 {
   font-size: 18px;
 }
 
+/*Links*/
 a {
   color: #35404f;
 }
 
 a:visited {
-  color: #248f8f;
+  color: #35404f;
 }
 
 a:hover,
@@ -44,6 +54,11 @@ a:active {
   color: #248f8f;
 }
 
+nav .active {
+  color: #248f8f;
+}
+
+/*Button*/
 button {
   border: none;
   font-family: inherit;
