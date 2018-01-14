@@ -8,11 +8,11 @@ Secondary colour (sea foam): #86e8af
 Secondary colour (coral): #e35f56
 */
 
-/*Display div boxes*/
+/*Display div boxes
 div {
   border: 1px solid red
 }
-
+*/
 
 /*General*/
 body {
@@ -165,7 +165,17 @@ nav {
   margin: 0 auto;
 }
 
+.seattle {
+  stroke-dasharray: 2800;
+  stroke-dashoffset: 2800;
+  animation: dash 10s linear forwards;
+}
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 /*Media queries*/
 @media all and (max-width: 700px) {
