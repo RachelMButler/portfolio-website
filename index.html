@@ -4,19 +4,19 @@
 <head>
   <title>Rachel Butler, UX Designer</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 
 <body>
 
   <div class="wrapper">
 
-    <!--Logo-->
-    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="logo"/>
-
-    <!--Menu-->
+    <!--Menu and Logo-->
     <nav>
-      <ul>
+      <img src="img/logo.png" class="logo" alt="logo"/>
+      <ul class="navigation">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -24,39 +24,42 @@
     </nav>
 
     <!--Portfolio heading-->
-    <h1>Hi, my name is <b>Rachel Butler</b>. <span><i>Welcome to my portfolio site!</i></span></h1>
+    <h1 class="introduction">
+      Hi, my name is <b>Rachel Butler</b>. <span><i>Welcome to my portfolio site!</i></span>
+    </h1>
 
     <!--Work samples-->
-    <div>
-      <div>
-        <img src="img/retain.png" alt="Usability Testing for Retain" width="350"/>
+    <div class="columns-container">
+      <div class="column-4">
+        <img src="img/retain.png" alt="Usability Testing for Retain" width="150"/>
         <div>
-          Usability Testing for Retain
+          Usability Testing
         </div>
       </div>
 
-      <div>
-        <img src="img/expert_user_research.png" alt="User Research for Expert" width="350"/>
+      <div class="column-4">
+        <img src="img/expert_user_research.png" alt="User Research for Expert" width="150"/>
         <div>
-          User Research for Expert
+          User Research
         </div>
       </div>
 
-      <div>
-        <img src="img/expert_user_personas.png" alt="User Personas for Expert" width="350"/>
+      <div class="column-4">
+        <img src="img/expert_user_personas.png" alt="User Personas for Expert" width="150"/>
         <div>
-          User Personas for Expert
+          User Personas
         </div>
       </div>
 
-      <div>
-        <img src="img/expert_IA_design.png" alt="IA Design for Expert" width="350"/>
+      <div class="column-4">
+        <img src="img/expert_IA_design.png" alt="IA Design for Expert" width="150"/>
         <div>
-          IA Design for Expert
+          IA Design
         </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
