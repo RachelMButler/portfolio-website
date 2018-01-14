@@ -8,11 +8,11 @@ Secondary colour (sea foam): #86e8af
 Secondary colour (coral): #e35f56
 */
 
-/*Display div boxes
+/*Display div boxes*/
 div {
   border: 1px solid red
 }
-*/
+
 
 /*General*/
 body {
@@ -85,7 +85,8 @@ nav {
   }
 
   /*Button*/
-  button {
+  button,
+  .cv-button {
     border: none;
     font-family: inherit;
     background-color: #35404f;
@@ -93,11 +94,13 @@ nav {
     color: white;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #248f8f
+    border-bottom: 2px solid #248f8f;
+    transition: 0.2s opacity;
   }
 
   button:hover,
-  button:focus {
+  button:focus,
+  .cv-button:hover {
     cursor: pointer;
     opacity: 0.8;
   }
@@ -151,6 +154,19 @@ nav {
   margin: 0 auto;
 }
 
+/*About*/
+.about {
+  text-align: center;
+}
+
+.animation {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
 /*Media queries*/
 @media all and (max-width: 700px) {
   .logo {
@@ -167,6 +183,35 @@ nav {
   .column-4:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+/*Animation*/
+@keyframes color-change {
+  0% {fill: #EDC655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /*Media queries*/
