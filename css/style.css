@@ -65,6 +65,9 @@ h3 {
 /*Links*/
 a {
   color: #35404f;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease 0s;
 }
 
 a:visited {
@@ -73,7 +76,8 @@ a:visited {
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  color:#248f8f;
+  border-bottom: 1px solid #248f8f;
 }
 
 a:active {
@@ -87,6 +91,7 @@ nav .active {
 /*Button*/
 button,
 .cv-button {
+  text-decoration: none;
   border: none;
   font-family: inherit;
   background-color: #35404f;
@@ -159,51 +164,17 @@ button:focus,
   text-align: center;
 }
 
-.animation {
-  width: 75%;
-  display: block;
-  margin: 0 auto;
-}
-
 .seattle {
+  margin-top: 50px;
   stroke-dasharray: 2800;
   stroke-dashoffset: 2800;
-  animation: dash 10s linear forwards;
+  animation: dash 5s linear forwards;
 }
 
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-/*Animation*/
-@keyframes color-change {
-  0% {fill: #EDC655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /*Media queries*/
