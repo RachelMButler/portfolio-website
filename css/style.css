@@ -66,8 +66,6 @@ h3 {
 a {
   color: #35404f;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s ease 0s;
 }
 
 a:visited {
@@ -77,7 +75,6 @@ a:visited {
 a:hover,
 a:focus {
   color:#248f8f;
-  border-bottom: 1px solid #248f8f;
 }
 
 a:active {
@@ -86,6 +83,14 @@ a:active {
 
 nav .active {
   color: #248f8f;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #248f8f;
+}
+
+.contact a {
+  text-decoration: underline;
 }
 
 /*Button*/
