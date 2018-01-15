@@ -10,7 +10,7 @@ Secondary colour (coral): #e35f56
 
 /*Display div boxes
 div {
-  border: 1px solid red
+border: 1px solid red
 }
 */
 
@@ -34,76 +34,76 @@ nav {
   display: inline-block;
   float: right;
   margin-top: 6px;
-  }
+}
 
-  .navigation {
-    list-style-type: none;
-    padding: 0;
-    float: right;
-  }
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
 
-  .navigation > li {
-    display: inline-block;
-    margin-left: 10px;
-  }
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
 
-  /*Fonts*/
-  h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    text-align: center;
-  }
+/*Fonts*/
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
 
-  h2 {
-    font-size: 24px;
-  }
+h2 {
+  font-size: 24px;
+}
 
-  h3 {
-    font-size: 18px;
-  }
+h3 {
+  font-size: 18px;
+}
 
-  /*Links*/
-  a {
-    color: #35404f;
-  }
+/*Links*/
+a {
+  color: #35404f;
+}
 
-  a:visited {
-    color: #35404f;
-  }
+a:visited {
+  color: #35404f;
+}
 
-  a:hover,
-  a:focus {
-    text-decoration: none;
-  }
+a:hover,
+a:focus {
+  text-decoration: none;
+}
 
-  a:active {
-    color: #248f8f;
-  }
+a:active {
+  color: #248f8f;
+}
 
-  nav .active {
-    color: #248f8f;
-  }
+nav .active {
+  color: #248f8f;
+}
 
-  /*Button*/
-  button,
-  .cv-button {
-    border: none;
-    font-family: inherit;
-    background-color: #35404f;
-    font-size: 16px;
-    color: white;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #248f8f;
-    transition: 0.2s opacity;
-  }
+/*Button*/
+button,
+.cv-button {
+  border: none;
+  font-family: inherit;
+  background-color: #35404f;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #248f8f;
+  transition: 0.2s opacity;
+}
 
-  button:hover,
-  button:focus,
-  .cv-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
+button:hover,
+button:focus,
+.cv-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 
 /*Layout styling*/
 .wrapper {
@@ -177,24 +177,6 @@ nav {
   }
 }
 
-/*Media queries*/
-@media all and (max-width: 700px) {
-  .logo {
-    height: 50px;
-  }
-  h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-  .column-4 {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .column-4:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
 /*Animation*/
 @keyframes color-change {
   0% {fill: #EDC655;}
@@ -225,14 +207,14 @@ nav {
 }
 
 /*Media queries*/
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) {
-  .logo {
-    height: 50px;
+/*Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1199px) {
+  body {
+    font-size: 16px;
   }
   h1 {
-    font-size: 24px;
-    text-align: left;
+    font-size: 30px;
+    text-align: center;
   }
   .column-4 {
     width: 48%;
@@ -241,31 +223,19 @@ nav {
   .column-4:nth-child(2n) {
     margin-right: 0;
   }
-/*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767px) {
-  .logo {
-    height: 50px;
-  }
-  h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-  .column-4 {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .column-4:nth-child(2n) {
-    margin-right: 0;
-  }
+}
 
 /*Medium devices (tablets, less than 992px)*/
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .logo {
-    height: 50px;
+    height: 60px;
+  }
+  body {
+    font-size: 16px;
   }
   h1 {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
   .column-4 {
     width: 48%;
@@ -274,15 +244,19 @@ nav {
   .column-4:nth-child(2n) {
     margin-right: 0;
   }
+}
 
-/*Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199px) {
+/*Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 767px) {
   .logo {
-    height: 50px;
+    height: 60px;
+  }
+  body {
+    font-size: 14px;
   }
   h1 {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
   .column-4 {
     width: 48%;
@@ -291,3 +265,26 @@ nav {
   .column-4:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 575px) {
+  .logo {
+    height: 40px;
+    margin-top: 10px;
+  }
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .column-4 {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .column-4:nth-child(2n) {
+    margin-right: 0;
+  }
+}
