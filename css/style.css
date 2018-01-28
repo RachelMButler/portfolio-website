@@ -122,9 +122,10 @@ button:focus,
   padding: 0 20px;
 }
 
-.columns-container {
+/*.columns-container {
   white-space: nowrap;
 }
+*/
 
 .column-4 {
   width: 23.5%;
@@ -145,6 +146,11 @@ button:focus,
 .introduction {
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+/*Home*/
+.project-details {
+  display: none;
 }
 
 /*Contact*/
