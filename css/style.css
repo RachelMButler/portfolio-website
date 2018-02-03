@@ -10,7 +10,7 @@ Secondary colour (coral): #e35f56
 
 /*Display div boxes
 div {
-border: 1px solid red
+border: 1px solid red;
 }
 */
 
@@ -27,31 +27,51 @@ body {
 
 /*Header*/
 .logo {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0
 }
 
-nav {
-  display: inline-block;
-  float: right;
-  margin-top: 6px;
+.nav-bar {
+  background-color: #35404f;
+  border: 1px solid #35404f;
 }
 
 .navigation {
-  list-style-type: none;
-  padding: 0;
-  float: right;
+  text-align: center;
+  padding-right: 50px;
 }
 
 .navigation > li {
   display: inline-block;
-  margin-left: 10px;
+  text-align: center;
+  color: white;
+  padding: 0 10px;
+}
+
+.introduction {
+  height: 300px;
+  padding: 60px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #248f8f;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.introduction h1 {
+  font-size: 60px;
+}
+
+.introduction span {
+  font-size: 30px;
 }
 
 /*Fonts*/
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
-  text-align: center;
 }
 
 h2 {
@@ -63,34 +83,28 @@ h3 {
 }
 
 /*Links*/
-a {
-  color: #35404f;
+.nav-bar a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-a:visited {
-  color: #35404f;
-}
-
-a:hover,
-a:focus {
-  color:#248f8f;
-}
-
-a:active {
-  color: #248f8f;
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: #7cbcbc;
 }
 
 nav .active {
-  color: #248f8f;
-}
-
-nav a:hover {
-  border-bottom: 1px solid #248f8f;
+  color: #7cbcbc;
 }
 
 .contact a {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #248f8f;
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: #7cbcbc;
 }
 
 /*Button*/
@@ -117,15 +131,18 @@ button:focus,
 
 /*Layout styling*/
 .wrapper {
+  background-color: #f0f2f5;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  overflow: hidden;
+  min-height: 100vh;
 }
 
-/*.columns-container {
+.columns-container {
+  padding: 0 20px;
   white-space: nowrap;
+  text-align: center;
 }
-*/
 
 .column-4 {
   width: 23.5%;
@@ -140,21 +157,15 @@ button:focus,
 
 .column-4 img {
   max-width: 100%;
-  border: 1px solid #999;
-}
-
-.introduction {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-/*Home*/
-.project-details {
-  display: none;
+  border: 2px solid #248f8f;
 }
 
 /*Contact*/
 .contact {
+  text-align: center;
+}
+
+.contact-details {
   text-align: center;
 }
 
@@ -164,17 +175,26 @@ button:focus,
 }
 
 .behance-icon {
-  width: 5%;
+  width: 50px;
   display: block;
   margin: 0 auto;
 }
 
 /*About*/
 .about {
+  padding: 0 150px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.download {
   text-align: center;
 }
 
 .seattle {
+  padding: 0 150px;
   margin-top: 50px;
   stroke-dasharray: 2800;
   stroke-dashoffset: 2800;
@@ -190,8 +210,11 @@ button:focus,
 /*Media queries*/
 /*Medium devices (tablets, less than 992px)*/
 @media only screen and (max-width: 991px) {
-  h1 {
-    font-size: 24px;
+  .about {
+    padding: 0 0;
+  }
+  .seattle {
+    padding: 0 0;
   }
   .column-4 {
     width: 48%;
@@ -205,16 +228,24 @@ button:focus,
 /*Small devices (landscape phones, less than 768px)*/
 @media only screen and (max-width: 767px) {
   .logo {
-    width: 250px;
+    width: 200px;
   }
+}
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 575px) {
-  header {
-    text-align: center;
+  .navigation > li {
+    display: block;
   }
-  nav {
-    float: none;
+  .introduction h1 {
+    font-size: 30px;
+  }
+  .introduction span {
+    font-size: 24px;
+  }
+  .introduction {
+    height: 135px;
+    padding: 1px 0;
   }
   .column-4 {
     width: 100%;
