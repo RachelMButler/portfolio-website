@@ -8,11 +8,11 @@ Secondary colour (sea foam): #86e8af
 Secondary colour (coral): #e35f56
 */
 
-/*Display div boxes
+/*Display div boxes*/
 div {
 border: 1px solid red;
 }
-*/
+
 
 /*General*/
 body {
@@ -140,8 +140,6 @@ button:focus,
 
 .columns-container {
   padding: 0 20px;
-  white-space: nowrap;
-  text-align: center;
 }
 
 .column-4 {
@@ -158,6 +156,28 @@ button:focus,
 .column-4 img {
   max-width: 100%;
   border: 2px solid #248f8f;
+  position: relative;
+}
+
+.column-4-dark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-details {
+  position: relative;
+  display: block;
+  top: -210px;
+  padding: 5px;
+  height: 0px;
+  color: white;
 }
 
 /*Contact*/
