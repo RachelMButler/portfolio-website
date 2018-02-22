@@ -8,13 +8,13 @@ Secondary colour (sea foam): #86e8af
 Secondary colour (coral): #e35f56
 */
 
-/*Display div boxes
+/* Display div boxes
 div {
 border: 1px solid red;
 }
 */
 
-/*General*/
+/* General */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -25,12 +25,12 @@ body {
   box-sizing: border-box;
 }
 
-/*Header*/
+/* Header */
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 0
+  padding: 10px 0;
 }
 
 .nav-bar {
@@ -56,7 +56,7 @@ body {
   margin-bottom: 30px;
   text-align: center;
   background-color: #248f8f;
-  color: #ffffff;
+  color: #fff;
   line-height: 50px;
 }
 
@@ -68,7 +68,7 @@ body {
   font-size: 30px;
 }
 
-/*Fonts*/
+/* Fonts */
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
@@ -82,9 +82,9 @@ h3 {
   font-size: 18px;
 }
 
-/*Links*/
+/* Links */
 .nav-bar a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ nav .active {
   color: #7cbcbc;
 }
 
-/*Button*/
+/* Button */
 button,
 .button {
   text-decoration: none;
@@ -129,7 +129,7 @@ button:focus,
   opacity: 0.8;
 }
 
-/*Layout styling*/
+/* Layout styling */
 .wrapper {
   background-color: #f0f2f5;
   max-width: 1000px;
@@ -173,12 +173,12 @@ button:focus,
   display: block;
   top: -210px;
   padding: 10px;
-  height: 0px;
+  height: 0;
   color: white;
   text-align: center;
 }
 
-/*Contact*/
+/* Contact */
 .contact {
   text-align: center;
 }
@@ -198,7 +198,7 @@ button:focus,
   margin: 0 auto;
 }
 
-/*About*/
+/* About */
 .about {
   padding: 0 150px;
 }
@@ -225,46 +225,54 @@ button:focus,
   }
 }
 
-/*Media queries*/
-/*Medium devices (tablets, less than 992px)*/
+/* Media queries */
+
+/* Medium devices (tablets, less than 992px) */
 @media only screen and (max-width: 991px) {
   .about {
-    padding: 0 0;
+    padding: 0;
   }
+
   .seattle {
-    padding: 0 0;
+    padding: 0;
   }
+
   .column-4 {
     width: 48%;
     margin-right: 4%;
   }
+
   .column-4:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-/*Small devices (landscape phones, less than 768px)*/
+/* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 767px) {
   .logo {
     width: 200px;
   }
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
+/* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
   .navigation > li {
     display: block;
   }
+
   .introduction h1 {
     font-size: 30px;
   }
+
   .introduction span {
     font-size: 24px;
   }
+
   .introduction {
     height: 135px;
     padding: 1px 0;
   }
+
   .column-4 {
     width: 100%;
     margin-right: 0%;
